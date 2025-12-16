@@ -304,7 +304,7 @@ elif page == "➕ Nova Sessão":
                 valor = st.number_input("Valor (R$) *", min_value=0.0, value=150.0, step=10.0)
                 metodo_pagamento = st.selectbox(
                     "Método de Pagamento",
-                    ["Dinheiro", "Pix", "Cartão de Crédito", "Cartão de Débito", "Transferência"]
+                    ["Pix", "Dinheiro", "Cartão de Crédito", "Cartão de Débito", "Transferência"]
                 )
 
             notas = st.text_area("Notas (opcional)")
