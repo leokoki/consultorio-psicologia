@@ -10,11 +10,37 @@ st.set_page_config(
     layout="wide"
 )
 
+# Senha vem dos Secrets (não aparece no código público)
+PASSWORD = st.secrets["app"]["password"]
+
+if "autenticado" not in st.session_state:
+    st.session_state.autenticado = False
+
+if not st.session_state.autenticado:
+    senha_input = st.text_input("🔐 Digite a senha para acessar", type="password")
+    if senha_input == PASSWORD:
+        st.session_state.autenticado = True
+        st.rerun()
+    else:
+        st.warning("Senha incorreta.")
+        st.stop()
+# Resto do app aqui
+st.title("📊 Dashboard do Consultório")
+
 st.sidebar.title("🧠 Gerenciador de Consultório")
 page = st.sidebar.radio(
     "Navegação",
     ["📊 Dashboard Completo", "👥 Clientes", "📅 Sessões", "➕ Novo Cliente", "➕ Nova Sessão"]
 )
+
+st.set_page_config(
+    page_title="Consultório Tassiane - Gerenciador",
+    page_icon="https://i.ibb.co/ynZx7QBP/sgs-deborapsicologa-logo-final-16.png",
+    layout="wide"
+)
+
+# Senha vem dos Secrets (não aparece no código público)
+PASSWORD = st.secrets["app"]["password"]
 
 if page == "📊 Dashboard Completo":
     st.title("📊 Dashboard Financeiro Completo")
