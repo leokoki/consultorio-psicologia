@@ -23,7 +23,7 @@ def get_spreadsheet():
     """Abre a planilha do consultório"""
     client = get_sheets_client()
     # Substitua pelo nome da sua planilha
-    sheet = client.open("Consultório Psicologia")
+    sheet = client.open_by_key("1UKGuX_l2fd7__bkOmME22r4jSnoQj8WnQKq6h8tDfuA")
     return sheet
 
 def get_clients():
