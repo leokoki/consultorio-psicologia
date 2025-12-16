@@ -20,11 +20,23 @@ def get_sheets_client():
     return client
 
 def get_spreadsheet():
-    """Abre a planilha do consultório"""
-    client = get_sheets_client()
-    # Substitua pelo nome da sua planilha
-    sheet = client.open_by_key("1UKGuX_l2fd7__bkOmME22r4jSnoQj8WnQKq6h8tDfuA")
-    return sheet
+    """Retorna a planilha do Google Sheets"""
+    try:
+        creds_dict = dict(st.secrets["gcp_service_account"])
+        creds = ServiceAccountCredentials.from_json_keyfile_dict(
+            creds_dict,
+            scopes=["https://www.googleapis.com/auth/spreadsheets", 
+                    "https://www.googleapis.com/auth/drive"]
+        )
+        client = gspread.authorize(creds)
+
+        # ✅ COLOQUE O ID CORRETO AQUI
+        sheet = client.open_by_key("1UKGuX_l2fd7__bkOmME22r4jSnoQj8WnQKq6h8tDfuA")
+        return sheet
+
+    except Exception as e:
+        st.error(f"Erro ao conectar com Google Sheets: {e}")
+        return None
 
 def get_clients():
     """Retorna todos os clientes"""
