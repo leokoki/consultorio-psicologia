@@ -5,7 +5,7 @@ from datetime import datetime
 import database as db
 
 st.set_page_config(
-    page_title="Gerenciador de Consultório",
+    page_title="Consultório Tassiane - Gerenciador",
     page_icon="https://i.ibb.co/ynZx7QBP/sgs-deborapsicologa-logo-final-16.png",
     layout="wide"
 )
