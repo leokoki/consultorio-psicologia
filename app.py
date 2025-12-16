@@ -24,17 +24,12 @@ if not st.session_state.autenticado:
     else:
         st.warning("Senha incorreta.")
         st.stop()
-# Resto do app aqui
-st.title("📊 Dashboard do Consultório")
 
 st.sidebar.title("🧠 Gerenciador de Consultório")
 page = st.sidebar.radio(
     "Navegação",
     ["📊 Dashboard Completo", "👥 Clientes", "📅 Sessões", "➕ Novo Cliente", "➕ Nova Sessão"]
 )
-
-# Senha vem dos Secrets (não aparece no código público)
-PASSWORD = st.secrets["app"]["password"]
 
 if page == "📊 Dashboard Completo":
     st.title("📊 Dashboard Financeiro Completo")
