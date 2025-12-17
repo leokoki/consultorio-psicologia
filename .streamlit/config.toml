@@ -1,11 +1,18 @@
+[app]
+password = "suaSenhaSegura123"
+
 [gcp_service_account]
 type = "service_account"
-project_id = "consultorio-psicologia-480505"
-private_key_id = "a2e9c7c8dc39829529a625e86ce229b886b28671"
-private_key = """-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCoZQFcsV7CqExZ\nA64t5aYxd5I8aNYPcBLPyLOnnQwkUv4h1Ap6lZDjVctyeUSDTGxnInPYDygQPhbY\nzu+DZllDdSeReLAcGaSRvG0IgUsOn9Y0DRJATQdm7txqeTcVznHRvsI/v7QeDv/s\npWRdmat8JK92J8Ci9L/ligmlPczaXb6qXvQoAMW8Aj6BMQx4w86yfRojGxCia0LQ\nTvI6c+ap2e832nYIJZilMKK2K0RcwylklLGgnc/IM/PUZoltBt+b+PlCAuqgTIfo\nhAcOYna7AAt+/Zoi22DDiWNgEey+fx9Y0W4C2efWEzTp8D5ayewsfl18iA0Xayuf\ny7FEBbZ/AgMBAAECggEAJEfey0HL0NTB3kvUsz7PV8kTUMClnh3fb7UmP+6uNwVK\ni69Lsq2W0eQiOT+3azKECJR7sQlS8GzwLzYmlIDwqoALTmRaTTOZKW0XcMWqjjQR\nypUmYYQ3HA5KnwYOwDwCedZHs8Rx4igJK8tWnHQHZm/g/ewCrRleXu4mtdtiz4kY\n+4+qsDfanrmlIsaaszu8XxKYSsOgoBpyYCeWrnh4HL/aDIAx9WEeteYKtezIFbZX\n/WQzjf9Sb8L0KCUichJUfs6OuMYIMr+mBOjhsRgzbHRrGe31pin8EwlfhY+A7IIG\n6wQdca86F8DoYAVYu2sh7tsMkNEnheklYXf2u2YaQQKBgQDppq89ZxXTX6dXW2Sr\nNEoIsus3R2njogTooDv0ROvGMtoZU8kYwg1DjMIUGe2PXLTu+2QRVc5qYKrUVClK\nSDcRMRbDmjEapMpEPTgoWp9bQCcLcNeYKetQOIZwBJpHJtCfDJsEV/Pe+SFkuwmI\ns9nEumkG7NU6WRn8csqL7pbwAwKBgQC4gGlBRXDE/Pwew4lqhFKefu+YWq2iINVo\n71mA97kIJevXaE5PZMnKTryUMe8hTT8mLqlt7DC2NbA2pswRCOCDHq5URYok0XMF\nXP5MLGc2qdgjVJ6w0aNL612zabL/J/IHYsjAloIIKAWuhDo9iwUWlaxpDoHK7Za+\nuHA+p7qs1QKBgQDS1miXXegh/tTATWY/30VXKCx8i2KP2GnZiI3RVEf1Z3nLFQIH\n50OUyvVush7eGOfkJtEbm3RSJbzBMNi5gQS/7K3//6mDw2QJw7xjHbNi4jbZahAB\n7QG8N+WIO38D6ZCjlPplJwCXGfP6M5Tc2H4Pua6AY0HeDv0WAnenYbquBQKBgQCT\noWyXZdEOTsAOfbf/G1JgsIFXD3fQOyWIiby8jXvpIS7NdhDzRlqRHt+WVT5bD0xw\naPX5lvyDUAJoOJ8hIlFDmdE0bVBUlaPLrtVsbjtIai8gVh2ErrpTjUm0vecUdAoe\nDtVEBSqXDC8/rV5M0GiJ4cnLZmhE0EfG5B4shFnC4QKBgQDOCK3hc8+jsqqgV05J\nOAfJEMhX2KDmdPhr516x2BqyV2JkE/Lc7xQvpHY0CxznpTYfgUIQt2kf0h9r3H9i\n/rG54js/6/AedbNhXMnyLsKeTmud3KeO6OpOoP8dNV2uKngP9KrEOBjdPS7s2BnM\nmM5w/4sxOh/S1IPDpItmxSgs3w==\n-----END PRIVATE KEY-----\n"""
-client_email = "consultorio-app@consultorio-psicologia-480505.iam.gserviceaccount.com"
-client_id = "109216665459616654903"
+project_id = "seuprojeto-xxxxx"
+private_key_id = "abc123..."
+private_key = """-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkq...
+-----END PRIVATE KEY-----
+"""
+client_email = "seuprojeto-app@seuprojeto-xxxxx.iam.gserviceaccount.com"
+client_id = "1234567890"
 auth_uri = "https://accounts.google.com/o/oauth2/auth"
 token_uri = "https://oauth2.googleapis.com/token"
 auth_provider_x509_cert_url = "https://www.googleapis.com/oauth2/v1/certs"
-client_x509_cert_url = "https://www.googleapis.com/robot/v1/metadata/x509/consultorio-app%40consultorio-psicologia-480505.iam.gserviceaccount.com"
+client_x509_cert_url = "https://www.googleapis.com/robot/v1/metadata/x509/seuprojeto-app%40seuprojeto-xxxxx.iam.gserviceaccount.com"
+universe_domain = "googleapis.com"
