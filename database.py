@@ -30,8 +30,9 @@ def get_spreadsheet():
         )
         client = gspread.authorize(creds)
 
-        # ✅ COLOQUE O ID CORRETO AQUI
-        sheet = client.open_by_key("1UKGuX_l2fd7__bkOmME22r4jSnoQj8WnQKq6h8tDfuA")
+        # ✅ Agora vem dos Secrets
+        sheet_id = st.secrets["app"]["sheet_id"]
+        sheet = client.open_by_key(sheet_id)
         return sheet
 
     except Exception as e:
